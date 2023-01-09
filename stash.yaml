@@ -39,15 +39,18 @@ proxy-groups:
 - icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Rocket.png
   name: 手动切换
   proxies:
+  - 香港节点
+  - 日本节点
+  - 台湾节点
+  - 美国节点
+  - 新加坡节点
   - DIRECT
-  - 自动选择
-  - 故障转移
   type: select
   use:
-  - All
 - icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Auto.png
   interval: 300
   name: 自动选择
+  proxies: []
   type: url-test
   url: 'http://www.gstatic.com/generate_204'
   use:
@@ -137,7 +140,6 @@ proxy-groups:
   - 手动切换
   - 自动选择
   - 故障转移
-  - 美国节点
   type: select
 - icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Telegram.png
   name: Telegram
