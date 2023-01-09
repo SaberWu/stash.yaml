@@ -1,0 +1,283 @@
+allow-lan: true
+bind-address: '*'
+dns:
+  default-nameserver:
+  - 119.29.29.29
+  - 223.5.5.5
+  enable: true
+  enhanced-mode: fake-ip
+  fake-ip-filter:
+  - '*.lan'
+  - localhost.ptlogin2.qq.com
+  - '+.srv.nintendo.net'
+  - '+.stun.playstation.net'
+  - '+.msftconnecttest.com'
+  - '+.msftncsi.com'
+  - '+.xboxlive.com'
+  - 'msftconnecttest.com'
+  - 'xbox.*.microsoft.com'
+  - '*.battlenet.com.cn'
+  - '*.battlenet.com'
+  - '*.blzstatic.cn'
+  - '*.battle.net'
+  fake-ip-range: 198.18.0.1/16
+  ipv6: true
+  listen: 0.0.0.0:53
+  nameserver:
+  - https://doh.pub/dns-query
+  - https://dns.alidns.com/dns-query
+external-controller: 127.0.0.1:9090
+http:
+  ca: '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'
+  ca-passphrase: '2011662D'
+ipv6: true
+log-level: debug
+mixed-port: 7890
+mode: rule
+proxies: []
+proxy-groups:
+- icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Rocket.png
+  name: 手动切换
+  proxies:
+  - DIRECT
+  - 自动选择
+  - 故障转移
+  type: select
+  use:
+  - All
+- icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Auto.png
+  interval: 300
+  name: 自动选择
+  type: url-test
+  url: 'http://www.gstatic.com/generate_204'
+  use:
+  - All
+- icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Bypass.png
+  interval: 300
+  name: 故障转移
+  proxies: []
+  type: fallback
+  url: 'http://www.gstatic.com/generate_204'
+  use:
+  - All
+- icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Global.png
+  name: 国外网站
+  proxies:
+  - 手动切换
+  - 自动选择
+  - 故障转移
+  type: select
+- icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/China_Map.png
+  name: 国内网站
+  proxies:
+  - DIRECT
+  - 手动切换
+  - 自动选择
+  - 故障转移
+  type: select
+- icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/YouTube.png
+  name: YouTube
+  proxies:
+  - 手动切换
+  - 自动选择
+  - 故障转移
+  type: select
+- icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Google.png
+  name: Google
+  proxies:
+  - 手动切换
+  - 自动选择
+  - 故障转移
+  type: select
+- icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/github.png
+  name: GitHub
+  proxies:
+  - 手动切换
+  - 自动选择
+  - 故障转移
+  type: select
+- icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Apple.png
+  name: 苹果服务
+  proxies:
+  - DIRECT
+  - 手动切换
+  - 自动选择
+  - 故障转移
+  type: select
+- icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Microsoft.png
+  name: 微软服务
+  proxies:
+  - 手动切换
+  - 自动选择
+  - 故障转移
+  type: select
+- icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/bilibili_3.png
+  name: 哔哩哔哩
+  proxies:
+  - DIRECT
+  - 手动切换
+  - 自动选择
+  - 故障转移
+  type: select
+- icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Game.png
+  name: 游戏平台
+  proxies:
+  - 手动切换
+  - 自动选择
+  - 故障转移
+  type: select
+- icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Advertising.png
+  name: AdBlock
+  proxies:
+  - REJECT
+  type: select
+- icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Final.png
+  name: 漏网之鱼
+  proxies:
+  - 手动切换
+  - 自动选择
+  - 故障转移
+  - 美国节点
+  type: select
+- icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Telegram.png
+  name: Telegram
+  proxies:
+  - 故障转移
+  - 自动选择
+  - 手动切换
+  type: select
+- filter: "(?=.*(港|\U0001F1ED\U0001F1F0|HK|(?i)Hong))^((?!(台|日|韩|新|美)).)*$"
+  icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/HK.png
+  name: 香港节点
+  proxies: []
+  type: url-test
+  url: http://cp.cloudflare.com/generate_204
+  use:
+  - All
+- filter: "(?=.*(日|\U0001F1EF\U0001F1F5|JP|(?i)Japan))^((?!(港|台|韩|新|美)).)*$"
+  icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/JP.png
+  name: 日本节点
+  proxies: []
+  type: url-test
+  url: http://cp.cloudflare.com/generate_204
+  use:
+  - All
+- filter: "(?=.*(台|\U0001F1E8\U0001F1F3|\U0001F1F9\U0001F1FC|TW|(?i)Taiwan))^((?!(港|日|韩|新|美)).)*$"
+  icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/TW.png
+  name: 台湾节点
+  proxies: []
+  type: url-test
+  url: http://cp.cloudflare.com/generate_204
+  use:
+  - All
+- filter: "(?=.*(美|\U0001F1FA\U0001F1F8|US|(?i)States|American))^((?!(港|台|日|韩|新)).)*$"
+  icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/US.png
+  name: 美国节点
+  proxies: []
+  type: url-test
+  url: http://cp.cloudflare.com/generate_204
+  use:
+  - All
+- filter: "(?=.*(新|新加坡|狮城|sg|SG|singapore))^((?!(港|台|日|韩|美)).)*$"
+  icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/SG.png
+  name: 新加坡节点
+  proxies: []
+  type: url-test
+  url: http://cp.cloudflare.com/generate_204
+  use:
+  - All
+proxy-providers:
+  All:
+    interval: 3600
+    url: http://sub.store/download/aweiyun
+rule-providers:
+  Adblock-Domain:
+    behavior: domain
+    interval: 86400
+    path: ./ruleset/AdDomain.yaml
+    type: http
+    url: 'https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/AdvertisingLite/AdvertisingLite_Domain.yaml'
+  Apple:
+    behavior: classical
+    interval: 86400
+    path: ./ruleset/Apple.yaml
+    type: http
+    url: 'https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Apple/Apple.yaml'
+  BiliBili:
+    behavior: classical
+    interval: 86400
+    path: ./ruleset/BiliBili.yaml
+    type: http
+    url: 'https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/BiliBili/BiliBili.yaml'
+  China:
+    behavior: classical
+    interval: 86400
+    path: ./ruleset/China.yaml
+    type: http
+    url: 'https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/China/China.yaml'
+  Game:
+    behavior: classical
+    interval: 86400
+    path: ./ruleset/Game.yaml
+    type: http
+    url: 'https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Game/Game.yaml'
+  GitHub:
+    behavior: domain
+    interval: 86400
+    url: https://rules.kr328.app/github.yaml
+  Global:
+    behavior: domain
+    interval: 86400
+    path: ./ruleset/Global-Domain.yaml
+    type: http
+    url: 'https://ghproxy.com/https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/proxy.txt'
+  Google:
+    behavior: classical
+    interval: 86400
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Google/Google.yaml
+  Lan:
+    behavior: classical
+    interval: 86400
+    path: ./ruleset/lan.yaml
+    type: http
+    url: 'https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Lan/Lan.yaml'
+  Microsoft:
+    behavior: classical
+    interval: 86400
+    path: ./ruleset/Microsoft.yaml
+    type: http
+    url: 'https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Microsoft/Microsoft.yaml'
+  PackageName:
+    behavior: classical
+    interval: 86400
+    path: ./ruleset/PackageName.yaml
+    type: http
+    url: 'https://ghproxy.com/https://raw.githubusercontent.com/Infatuation-Fei/rule/main/Clash/Rule/Android_Package_Name_Proxy.yaml'
+  Telegram:
+    behavior: ipcidr-text
+    interval: 86400
+    url: https://core.telegram.org/resources/cidr.txt
+  YouTube:
+    behavior: classical
+    interval: 86400
+    path: ./ruleset/YouTube.yaml
+    type: http
+    url: 'https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/YouTube/YouTube.yaml'
+rules:
+- DOMAIN-KEYWORD,sandbox.itunes.apple.com,自动选择
+- RULE-SET,Telegram,Telegram
+- RULE-SET,Adblock-Domain,AdBlock
+- RULE-SET,YouTube,YouTube
+- RULE-SET,Google,Google
+- RULE-SET,GitHub,GitHub
+- RULE-SET,Apple,苹果服务
+- RULE-SET,Microsoft,微软服务
+- RULE-SET,BiliBili,哔哩哔哩
+- RULE-SET,Game,游戏平台
+- RULE-SET,PackageName,国外网站
+- RULE-SET,Global,国外网站
+- RULE-SET,China,国内网站
+- RULE-SET,Lan,DIRECT
+- GEOIP,CN,国内网站
+- MATCH,漏网之鱼
+subscribe-url: https://awsl.business/api/v1/client/subscribe?token=f2f597e56aca3aebf63c53bd37e81d26
